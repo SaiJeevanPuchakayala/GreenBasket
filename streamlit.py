@@ -120,15 +120,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Streamlit app layout
-st.title("GreenBasket 🌿 - Every Basket Counts and Makes an Impact on the Planet 🌍")
-
 ## Initialize our Streamlit app
 im = Image.open("./Images/food_analysis.png")
 st.set_page_config(
     page_title="GreenBasket",
     page_icon=im,
 )
+
+# Streamlit app layout
+st.title("GreenBasket 🌿 - Every Basket Counts and Makes an Impact on the Planet 🌍")
 
 with st.sidebar:
     img = Image.open("./Images/food_analysis.png")
