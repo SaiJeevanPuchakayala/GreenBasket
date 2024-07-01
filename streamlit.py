@@ -123,6 +123,13 @@ st.markdown(
 # Streamlit app layout
 st.title("GreenBasket 🌿 - Every Basket Counts and Makes an Impact on the Planet 🌍")
 
+## Initialize our Streamlit app
+im = Image.open("./Images/food_analysis.png")
+st.set_page_config(
+    page_title="GreenBasket",
+    page_icon=im,
+)
+
 with st.sidebar:
     img = Image.open("./Images/food_analysis.png")
     st.image(img)
@@ -130,6 +137,59 @@ with st.sidebar:
     st.write(
         "GreenBasket is an innovative and eco-friendly digital platform designed to promote sustainable living through conscious food choices. Our mission is to help individuals and families reduce their carbon footprint by making it easier to plan, prepare, and enjoy meals that are both delicious and environmentally responsible."
     )
+
+st.write(
+    "### Key Features:"
+)
+st.write(
+    "1. **Sustainable Recipe Generator 🍽️**:\n"
+    "- Generate recipes that use lower-carbon ingredients.\n"
+    "- Provides step-by-step cooking instructions.\n"
+    "- Focus on utilizing locally sourced and seasonally available produce.\n"
+    "- Helps in reducing the overall environmental impact of your meals."
+)
+st.write(
+    "2. **Nutritional Insights & Alternatives 🥗**:\n"
+    "- Analyze the nutritional content of your grocery basket.\n"
+    "- Suggest healthier and more sustainable alternatives.\n"
+    "- Highlight the health benefits of reducing processed foods and increasing fresh produce intake.\n"
+    "- Educates users about the nutritional value of their food choices."
+)
+st.write(
+    "3. **Eco-Friendly Meal Kits 🍱**:\n"
+    "- Offer customizable zero-waste meal kits.\n"
+    "- Tailored to users' dietary preferences and needs.\n"
+    "- Utilize reusable or compostable packaging.\n"
+    "- Minimize food waste by providing exact portions needed for recipes."
+)
+st.write(
+    "4. **Seasonal Eating Navigator 🌱**:\n"
+    "- Encourage seasonal eating by highlighting in-season produce.\n"
+    "- Suggest recipes that use ingredients available in your region and season.\n"
+    "- Educate users on the environmental benefits of eating seasonally, such as reduced transportation emissions and supporting local farmers."
+)
+st.write(
+    "5. **Leftover Culinary Creations ♻️**:\n"
+    "- Transform leftovers into new, creative meals.\n"
+    "- Reduce food waste by providing recipes that utilize ingredients you already have.\n"
+    "- Offer storage tips to keep leftovers fresh longer."
+)
+st.write(
+    "### Benefits of Using GreenBasket:"
+)
+st.write(
+    "- **Environmental Impact**: By choosing recipes and meal kits that prioritize sustainable ingredients, users can significantly reduce their carbon footprint and contribute to a healthier planet.\n"
+    "- **Health and Wellness**: The platform emphasizes nutritious and wholesome food choices, helping users to improve their overall health and well-being.\n"
+    "- **Cost Efficiency**: By minimizing food waste and focusing on seasonal produce, users can save money on groceries.\n"
+    "- **Convenience**: GreenBasket provides easy-to-follow recipes and meal planning tools, making it simple to incorporate sustainable eating habits into daily life.\n"
+    "- **Education**: The platform educates users about the benefits of sustainable eating, helping to foster a greater awareness of the environmental impact of food choices."
+)
+st.write(
+    "GreenBasket aims to be more than just a meal planning tool; it is a comprehensive guide to making eco-friendly and health-conscious food choices. Whether you're looking to reduce your carbon footprint, improve your diet, or simply find new and exciting recipes, GreenBasket is your go-to platform for all things sustainable and delicious."
+)
+st.write(
+    "Join us in our journey to make every basket count and create a positive impact on our planet! 🌍🌿"
+)
 
 # Create the navigation tabs
 tabs = st.tabs(["Sustainable Recipe Generator 🍽️", "Nutritional Insights & Alternatives 🥗", "Eco-Friendly Meal Kits 🍱", "Seasonal Eating Navigator 🌱", "Leftover Culinary Creations ♻️"])
