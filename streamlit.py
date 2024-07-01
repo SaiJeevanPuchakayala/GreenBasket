@@ -1,5 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
+from PIL import Image
 
 # Configure Google Gemini 1.5 model
 genai.configure(api_key="AIzaSyBO6yz_YVfGsqxS18bQXszCMkeVirpL2EA")
