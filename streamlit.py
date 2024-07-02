@@ -105,6 +105,7 @@ def transform_leftovers(leftover_ingredients):
     return response.text
 
 ## Initialize our Streamlit app
+
 im = Image.open("./Images/food_analysis.png")
 st.set_page_config(
     page_title="GreenBasket",
@@ -276,3 +277,15 @@ with tabs[4]:
             leftover_recipes = transform_leftovers(leftovers_list)
             st.write("Leftover Recipes:")
             st.markdown(leftover_recipes, unsafe_allow_html=True)
+
+footer = """
+<div style="text-align: center; font-size: medium; margin-top:200px;">
+    If you find GreenBasket useful or interesting, please consider starring it on GitHub.
+    <hr>
+    <a href="https://github.com/SaiJeevanPuchakayala/GreenBasket" target="_blank">
+    <img src="https://img.shields.io/github/stars/SaiJeevanPuchakayala/GreenBasket.svg?style=social" alt="GitHub stars">
+  </a>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
