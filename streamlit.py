@@ -2,8 +2,11 @@ import streamlit as st
 import google.generativeai as genai
 from PIL import Image
 
-# Configure Google Gemini 1.5 model
-genai.configure(api_key="AIzaSyBO6yz_YVfGsqxS18bQXszCMkeVirpL2EA")
+# Accessing the API key from secrets
+api_key = st.secrets["google_gemini"]["api_key"]
+
+# Configureing Google Gemini 1.5 model
+genai.configure(api_key=api_key)
 
 # Function to generate sustainable recipe suggestions
 def generate_recipe_suggestions(cuisine, meal_type, people):
