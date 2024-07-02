@@ -2,6 +2,8 @@
 
 ### Every Basket Counts and Makes an Impact on the Planet 🌍
 
+![GreenBasket](./Images/food_analysis.png)
+
 ## About GreenBasket
 GreenBasket is an innovative and eco-friendly digital platform designed to promote sustainable living through conscious food choices. Our mission is to help individuals and families reduce their carbon footprint by making it easier to plan, prepare, and enjoy meals that are both delicious and environmentally responsible.
 
